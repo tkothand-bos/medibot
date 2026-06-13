@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     # AWS
-    aws_region: str = "ap-south-1"
+    aws_region: str = "us-east-2"
 
     # S3
     s3_bucket: str = "mediassist-documents"
@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     cognito_region: str = "ap-south-1"
 
     # Qdrant
-    qdrant_url: str = "http://localhost:6333"
+    qdrant_url: str = ""
     qdrant_api_key: str = ""
     qdrant_collection: str = "mediassist_docs"
 
