@@ -1,0 +1,27 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pydantic-settings>=2.2
+python-dotenv>=1.0
+
+# AWS
+boto3>=1.34
+langchain-aws>=0.2
+
+# LangChain core
+langchain>=0.3
+langchain-community>=0.3
+
+# Vector store + embeddings
+qdrant-client[fastembed]>=1.12
+
+# Document parsing & chunking
+docling>=2.15
+transformers>=4.40
+
+# Reranking
+sentence-transformers>=3.0
+
+# Cognito JWT verification
+python-jose[cryptography]>=3.3
+requests>=2.31
