@@ -20,12 +20,13 @@ class Settings(BaseSettings):
     # Cognito
     cognito_user_pool_id: str = ""
     cognito_app_client_id: str = ""
-    cognito_region: str = "ap-south-1"
+    cognito_region: str = "us-east-2"
 
     # Qdrant
     qdrant_url: str = ""
     qdrant_api_key: str = ""
     qdrant_collection: str = "mediassist_docs"
+
 
     # Embedding / rerank models
     dense_model: str = "BAAI/bge-small-en-v1.5"
