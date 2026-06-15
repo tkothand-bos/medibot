@@ -17,7 +17,11 @@ qdrant-client[fastembed]>=1.12
 
 # Document parsing & chunking
 docling>=2.15
-transformers>=4.40
+
+# NOTE: torch is installed CPU-only via the setup script / Dockerfile
+# before this file is processed, to avoid the 3 GB CUDA build.
+# Pin to 4.x — transformers 5.x broke AutoProcessor lazy-import used by docling.
+transformers>=4.40,<5.0
 
 # Reranking
 sentence-transformers>=3.0

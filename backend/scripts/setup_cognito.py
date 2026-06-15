@@ -19,7 +19,7 @@ import boto3
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-REGION = os.environ.get("AWS_REGION", "ap-south-1")
+REGION = os.environ.get("AWS_DEFAULT_REGION") or os.environ.get("AWS_REGION", "us-east-2")
 POOL_NAME = "medibot-users"
 DEMO_PASSWORD = os.environ.get("MEDIBOT_DEMO_PASSWORD", "MediBot@2026!")
 
