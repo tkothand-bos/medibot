@@ -7,6 +7,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgl1 libglib2.0-0 && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
+
+# Install CPU-only PyTorch FIRST to avoid pulling the 3 GB CUDA build
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+
+# Install everything else (torch is already present, pip won't re-download it)
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app

@@ -14,8 +14,8 @@ class Settings(BaseSettings):
     s3_bucket: str = "mediassist-documents"
     s3_prefix: str = "docs/"
 
-    # Bedrock
-    bedrock_model_id: str = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+    # Bedrock  — cross-region inference profile works from any US region (us-east-2 included)
+    bedrock_model_id: str = "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
 
     # Cognito
     cognito_user_pool_id: str = ""
