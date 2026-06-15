@@ -52,6 +52,13 @@ body {
   margin-top: 0.75rem; background: var(--danger-soft); color: var(--danger);
   padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.85rem;
 }
+.built-by { margin-top: 1.25rem; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+.built-by h3 { font-size: 0.75rem; text-transform: uppercase; color: var(--muted); margin-bottom: 0.6rem; }
+.built-by-cards { display: flex; gap: 1rem; justify-content: center; }
+.built-by-card { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+.built-by-card img { width: 90px; height: 110px; }
+.built-by-name { font-size: 0.78rem; font-weight: 600; color: var(--text); text-align: center; }
+.built-by-title { font-size: 0.7rem; color: var(--muted); text-align: center; }
 
 /* ---- Chat layout ---- */
 .chat-shell { display: flex; height: 100vh; }

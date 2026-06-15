@@ -63,6 +63,22 @@ function Login({ onLogin }) {
             </span>
           ))}
         </div>
+
+        <div className="built-by">
+          <h3>Built by</h3>
+          <div className="built-by-cards">
+            <div className="built-by-card">
+              <img src="/doctor1.svg" alt="Dr. Dhaval Patel" />
+              <div className="built-by-name">Dr. Dhaval Patel</div>
+              <div className="built-by-title">Founder, Codebasics</div>
+            </div>
+            <div className="built-by-card">
+              <img src="/doctor2.svg" alt="Dr. Siddhant Pandey" />
+              <div className="built-by-name">Dr. Siddhant Pandey</div>
+              <div className="built-by-title">Expert in Surgery</div>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   );
